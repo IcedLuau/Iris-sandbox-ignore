@@ -1,4 +1,4 @@
-local Types = require(script.Parent.Parent.Types)
+local Types = require("../Types")
 
 -- Tables need an overhaul.
 

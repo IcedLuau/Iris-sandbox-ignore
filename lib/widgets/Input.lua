@@ -1,4 +1,4 @@
-local Types = require(script.Parent.Parent.Types)
+local Types = require("../Types")
 
 type InputDataTypes = "Num" | "Vector2" | "Vector3" | "UDim" | "UDim2" | "Color3" | "Color4" | "Rect" | "Enum" | "" | string
 type InputType = "Input" | "Drag" | "Slider"

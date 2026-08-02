@@ -1,4 +1,4 @@
-local Types = require(script.Parent.Types)
+local Types = require("./Types")
 
 export type ID = Types.ID
 export type State<T> = Types.State<T>

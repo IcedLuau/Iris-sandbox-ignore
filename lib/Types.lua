@@ -1,4 +1,4 @@
-local WidgetTypes = require(script.Parent.WidgetTypes)
+local WidgetTypes = require("./WidgetTypes")
 
 export type ID = WidgetTypes.ID
 export type State<T> = WidgetTypes.State<T>

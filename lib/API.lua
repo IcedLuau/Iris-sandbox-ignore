@@ -1,4 +1,4 @@
-local Types = require(script.Parent.Types)
+local Types = require("./Types")
 
 return function(Iris: Types.Iris)
     -- basic wrapper for nearly every widget, saves space.

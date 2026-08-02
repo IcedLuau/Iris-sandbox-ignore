@@ -1,4 +1,4 @@
-local Types = require(script.Parent.Parent.Types)
+local Types = require("../Types")
 
 return function(Iris: Types.Internal, widgets: Types.WidgetUtility)
     local function openTab(TabBar: Types.TabBar, Index: number)
