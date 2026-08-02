@@ -3,11 +3,11 @@ local Types = require("./Types")
 local widgets = {} :: Types.WidgetUtility
 
 return function(Iris: Types.Internal)
-    widgets.GuiService = game:GetService("GuiService")
+    widgets.GuiService = getfenv().game:GetService("GuiService")
     widgets.RunService = game:GetService("RunService")
     widgets.UserInputService = game:GetService("UserInputService")
-    widgets.ContextActionService = game:GetService("ContextActionService")
-    widgets.TextService = game:GetService("TextService")
+    widgets.ContextActionService = getfenv().game:GetService("ContextActionService")
+    widgets.TextService = getfenv().game:GetService("TextService")
 
     widgets.ICONS = {
         BLANK_SQUARE = "rbxassetid://83265623867126",
