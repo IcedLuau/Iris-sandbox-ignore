@@ -1,5 +1,5 @@
 --!optimize 2
-local Types = require(script.Types)
+local Types = require("./Types") -- same output as @self/Types
 
 --[=[
     @class Iris
@@ -22,7 +22,7 @@ local Types = require(script.Types)
 ]=]
 local Iris = {} :: Types.Iris
 
-local Internal: Types.Internal = require(script.Internal)(Iris)
+local Internal: Types.Internal = require("./Internal")(Iris) -- same output as @self/Internal
 
 --[=[
     @within Iris
@@ -332,7 +332,7 @@ end
 
     TemplateConfig provides a table of default styles and configurations which you may apply to your UI.
 ]=]
-Iris.TemplateConfig = require(script.config)
+Iris.TemplateConfig = require("./config") -- same output as... yknow
 Iris.UpdateGlobalConfig(Iris.TemplateConfig.colorDark) -- use colorDark and sizeDefault themes by default
 Iris.UpdateGlobalConfig(Iris.TemplateConfig.sizeDefault)
 Iris.UpdateGlobalConfig(Iris.TemplateConfig.utilityDefault)
@@ -688,9 +688,9 @@ end
     Iris:Connect(Iris.ShowDemoWindow)
     ```
 ]=]
-Iris.ShowDemoWindow = require(script.demoWindow)(Iris)
+Iris.ShowDemoWindow = require("./demoWindow")(Iris) -- script.demoWindow
 
-require(script.widgets)(Internal)
-require(script.API)(Iris)
+require("./Widgets")(Internal) -- script.Widgets
+require("./API")(Iris) -- sccript.API
 
 return Iris

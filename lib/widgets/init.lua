@@ -423,25 +423,26 @@ return function(Iris: Types.Internal)
 
     Iris._utility = widgets
 
-    require(script.Root)(Iris, widgets)
-    require(script.Window)(Iris, widgets)
+    -- script dot...
+    require("./Root")(Iris, widgets)
+    require("./Window")(Iris, widgets)
 
-    require(script.Menu)(Iris, widgets)
+    require("./Menu")(Iris, widgets)
 
-    require(script.Format)(Iris, widgets)
+    require("./Format")(Iris, widgets)
 
-    require(script.Text)(Iris, widgets)
-    require(script.Button)(Iris, widgets)
-    require(script.Checkbox)(Iris, widgets)
-    require(script.RadioButton)(Iris, widgets)
-    require(script.Image)(Iris, widgets)
+    require("./Text")(Iris, widgets)
+    require("./Button")(Iris, widgets)
+    require("./Checkbox")(Iris, widgets)
+    require("./RadioButton")(Iris, widgets)
+    require("./Image")(Iris, widgets)
 
-    require(script.Tree)(Iris, widgets)
-    require(script.Tab)(Iris, widgets)
+    require("./Tree")(Iris, widgets)
+    require("./Tab")(Iris, widgets)
 
-    require(script.Input)(Iris, widgets)
-    require(script.Combo)(Iris, widgets)
-    require(script.Plot)(Iris, widgets)
+    require("./Input")(Iris, widgets)
+    require("./Combo")(Iris, widgets)
+    require("./Plot")(Iris, widgets)
 
-    require(script.Table)(Iris, widgets)
+    require("./Table")(Iris, widgets)
 end
