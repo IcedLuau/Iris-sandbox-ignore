@@ -688,7 +688,7 @@ end
     Iris:Connect(Iris.ShowDemoWindow)
     ```
 ]=]
-Iris.ShowDemoWindow = require("./demoWindow")(Iris) -- script.demoWindow
+-- Iris.ShowDemoWindow = require("./demoWindow")(Iris) -- script.demoWindow
 
 require("./Widgets")(Internal) -- script.Widgets
 require("./API")(Iris) -- sccript.API
